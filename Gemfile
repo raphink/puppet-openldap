@@ -4,7 +4,8 @@ group :development, :unit_tests do
   gem 'rake',                    :require => false
   gem 'rspec-puppet',            :require => false, :git => 'https://github.com/rodjek/rspec-puppet.git'
   gem 'puppetlabs_spec_helper',  :require => false
-  gem 'puppet-lint',             :require => false
+  # https://github.com/rodjek/puppet-lint/issues/331
+  gem 'puppet-lint', '< 1.1.0',  :require => false
   gem 'simplecov',               :require => false
   gem 'rspec-puppet-facts',      :require => false
   gem 'json',                    :require => false
